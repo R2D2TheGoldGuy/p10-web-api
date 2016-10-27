@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Spotify API | Using Spotify data to generate a gallery</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!-- My Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <img src="img/spotify-logo.png" alt="The Official Spotify Logo">
+    <header class="search-bar">
+      <h1>Search your favorite music albums or artists!</h1>
+      <form action="#" id="search-form">
+        <input type="search" id="search-box" placeholder="Search any album or artist">
+        <button type="submit" id="search-btn">Search</button>
+      </form>
+    </header>
+
+    <div class="sort">
+      Sort by
+      <a class="sort-popularity" href="#">Popularity</a>
+      <a class="sort-date active" href="#">Date</a>
+      <a class="sort-name" href="#">Name</a>
+    </div>
+
+    <main class="spotify-data">
+    </main>
+
+    <div class="spotify-lightbox">
+      <a href="#" class="prev"></a><!-- Previous Arrow -->
+      <div class="info">
+        <div class="album-info">
+          <img class="album-info-image" src="#" alt="">
+          <span class="album-info-artist"></span>
+          <span class="album-info-name"></span>
+          <ul>
+            <li class="album-info-released"></li>
+            <li class="album-info-tracks"></li>
+          </ul>
+        </div>
+        <div class="track-info">
+        </div>
+      </div>
+      <a href="#" class="next"></a><!-- Next Arrow -->
+    </div>
+
+    <footer>
+      <p class="galactic-credits"></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
